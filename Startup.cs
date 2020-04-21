@@ -27,8 +27,8 @@ namespace DIApiExample
         {
             services.AddControllers();
 
-            services.AddSingleton<IService, Service>();
-            services.AddSingleton<WorkerSerice, WorkerSerice>();
+            services.AddTransient<IService, Service>();
+            services.AddTransient<WorkerSerice, WorkerSerice>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
